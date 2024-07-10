@@ -46,7 +46,7 @@ const LandingPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://accredian-backend-task-ar1k.onrender.com", formData);
+      const response = await axios.post("https://accredian-backend-task-ar1k.onrender.com/referrals", formData);
       console.log('Referral submitted successfully:', response.data);
       handleClose();
     } catch (error) {
